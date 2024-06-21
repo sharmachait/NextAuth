@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58216145-571c-40a9-b9c7-b5d6538e8550" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/auth/login-button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/[...slug]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/[...slug]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/auth/signin/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/testing/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JSX File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -47,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/chait/OneDrive/Desktop/cohort code alongs/auth",
+    "last_opened_file_path": "C:/Users/chait/OneDrive/Desktop/cohort code alongs/auth/app/[...slug]",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,6 +60,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chait\OneDrive\Desktop\cohort code alongs\auth\app\[...slug]" />
+      <recent name="C:\Users\chait\OneDrive\Desktop\cohort code alongs\auth\app" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -76,7 +83,8 @@
       <updated>1718909505805</updated>
       <workItem from="1718909508335" duration="15000" />
       <workItem from="1718909627094" duration="15000" />
-      <workItem from="1718914242810" duration="4848000" />
+      <workItem from="1718914242810" duration="4969000" />
+      <workItem from="1718950470866" duration="1830000" />
     </task>
     <servers />
   </component>
