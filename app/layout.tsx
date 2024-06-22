@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`text-teal-400 drop-shadow-md drop-shadow-[0_1.4px_1.4px_rgba(0,0,0,0.8)] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-700 to-purple-900 ${inter.className}`}
+        className={`bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-sky-400 to-blue-950 ${inter.className}`}
       >
         {children}
       </body>

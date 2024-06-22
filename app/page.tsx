@@ -12,28 +12,15 @@ export default function Home() {
       className={'flex h-full flex-col items-center justify-center space-y-6'}
     >
       <div className={'text-center'}>
-        <h1
-          className={cn(
-            'text-6xl font-semibold text-teal-400 drop-shadow-md drop-shadow-[0_1.4px_1.4px_rgba(0,0,0,0.8)]',
-            font.className
-          )}
-        >
-          Auth
-        </h1>
-        <p
-          className={
-            'text-teal-400 text-lg drop-shadow-[0_1.4px_1.4px_rgba(0,0,0,0.8)]'
-          }
-        >
-          A simple Auth lib
-        </p>
+        <h1 className={cn('text-6xl font-semibold ', font.className)}>Auth</h1>
+        <p className={'text-lg'}>A simple Auth lib</p>
       </div>
       <LoginButton>
         <Button
-          variant={'mint'}
+          variant={'default'}
           size={'lg'}
           className={
-            'text-[#172554] font-bold drop-shadow-[0_1.4px_1.4px_rgba(0,0,0,0.8)]'
+            'bg-gray-200 text-black font-bold drop-shadow-[0_1.4px_1.4px_rgba(0,0,0,0.8)]'
           }
         >
           Sign in

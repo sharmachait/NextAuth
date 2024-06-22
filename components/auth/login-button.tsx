@@ -13,15 +13,7 @@ export default function LoginButton(props: LoginButtonProps) {
     router.push(`/auth/login`);
   };
   if (mode === 'modal') {
-    return (
-      <span
-        className={
-          'text-teal-400 font-bold drop-shadow-[0_1.4px_1.4px_rgba(0,0,0,0.8)]'
-        }
-      >
-        TODO: Implement modal
-      </span>
-    );
+    return <span className={'font-bold'}>TODO: Implement modal</span>;
   }
   return (
     <span className={'cursor-pointer'} onClick={onClick}>
