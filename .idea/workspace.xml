@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58216145-571c-40a9-b9c7-b5d6538e8550" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/[...slug]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/[...slug]/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/auth/signin/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/testing/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/auth/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/auth/login/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/auth/login-form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/auth/login-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/login-button.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\chait\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "reference.idesettings.emmet",
+    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
     "ts.external.directory.path": "C:\\Users\\chait\\OneDrive\\Desktop\\cohort code alongs\\auth\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -84,7 +86,8 @@
       <workItem from="1718909508335" duration="15000" />
       <workItem from="1718909627094" duration="15000" />
       <workItem from="1718914242810" duration="4969000" />
-      <workItem from="1718950470866" duration="1830000" />
+      <workItem from="1718950470866" duration="1952000" />
+      <workItem from="1719041977611" duration="2850000" />
     </task>
     <servers />
   </component>

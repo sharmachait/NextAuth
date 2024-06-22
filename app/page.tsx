@@ -8,7 +8,9 @@ import { Button } from '@/components/ui/button';
 import LoginButton from '@/components/auth/login-button';
 export default function Home() {
   return (
-    <main className="flex h-full flex-col items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-700 to-purple-900 space-y-6">
+    <main
+      className={'flex h-full flex-col items-center justify-center space-y-6'}
+    >
       <div className={'text-center'}>
         <h1
           className={cn(
