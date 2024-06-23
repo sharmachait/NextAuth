@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58216145-571c-40a9-b9c7-b5d6538e8550" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/auth/back-button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/auth/card-wrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/auth/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/auth/social.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schemas/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/login.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/register.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/auth/register/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/auth/register-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/form-error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/form-success.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/login-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/login-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/auth/card-wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/card-wrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/auth/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/auth/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/login-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/auth/social.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/social.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/chait/OneDrive/Desktop/cohort code alongs/auth/app/[...slug]",
+    "last_opened_file_path": "C:/Users/chait/OneDrive/Desktop/cohort code alongs/auth/app/auth",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +69,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chait\OneDrive\Desktop\cohort code alongs\auth\app\auth" />
+      <recent name="C:\Users\chait\OneDrive\Desktop\cohort code alongs\auth\components" />
       <recent name="C:\Users\chait\OneDrive\Desktop\cohort code alongs\auth\app\[...slug]" />
       <recent name="C:\Users\chait\OneDrive\Desktop\cohort code alongs\auth\app" />
     </key>
@@ -93,7 +94,8 @@
       <workItem from="1718909627094" duration="15000" />
       <workItem from="1718914242810" duration="4969000" />
       <workItem from="1718950470866" duration="1952000" />
-      <workItem from="1719041977611" duration="13368000" />
+      <workItem from="1719041977611" duration="14248000" />
+      <workItem from="1719084369217" duration="10551000" />
     </task>
     <servers />
   </component>

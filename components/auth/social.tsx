@@ -12,7 +12,7 @@ export default function Social() {
       </Button>
       <Button size={'lg'} className={'w-full'} variant={'defaultInverse'}>
         <FaGithub className={'h-5 w-5'}></FaGithub>
-        &nbsp; Google
+        &nbsp; Github
       </Button>
     </div>
   );

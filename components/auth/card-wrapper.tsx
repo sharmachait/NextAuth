@@ -11,6 +11,7 @@ import Social from '@/components/auth/social';
 import BackButton from '@/components/auth/back-button';
 type CardWrapperProps = {
   children: React.ReactNode;
+  headerHeadline: string;
   headerLabel: string;
   backButtonLabel: string;
   backButtonHref: string;
@@ -20,7 +21,10 @@ export function CardWrapper(props: CardWrapperProps) {
   return (
     <Card className={'w-[400px] shadow-lg '}>
       <CardHeader>
-        <Header label={props.headerLabel}></Header>
+        <Header
+          headline={props.headerHeadline}
+          label={props.headerLabel}
+        ></Header>
       </CardHeader>
       <CardContent>{props.children}</CardContent>
       {props.showSocial && (
