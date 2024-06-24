@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58216145-571c-40a9-b9c7-b5d6538e8550" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/actions/login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/register.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/register/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/auth/register-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/form-error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/form-success.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20240624030600_user/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20240624060549_user/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/migration_lock.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/card-wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/card-wrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/login-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/social.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/social.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,13 @@
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
     </option>
   </component>
   <component name="Git.Settings">
@@ -52,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -62,7 +70,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\chait\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "C:\\Users\\chait\\OneDrive\\Desktop\\cohort code alongs\\auth\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -95,11 +103,14 @@
       <workItem from="1718914242810" duration="4969000" />
       <workItem from="1718950470866" duration="1952000" />
       <workItem from="1719041977611" duration="14248000" />
-      <workItem from="1719084369217" duration="10551000" />
+      <workItem from="1719084369217" duration="15260000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
