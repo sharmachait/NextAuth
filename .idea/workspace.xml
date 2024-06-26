@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58216145-571c-40a9-b9c7-b5d6538e8550" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(protected)/settings/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/actions/login.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/actions/register.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -100,7 +103,8 @@
       <workItem from="1718950470866" duration="1952000" />
       <workItem from="1719041977611" duration="14248000" />
       <workItem from="1719084369217" duration="16556000" />
-      <workItem from="1719248734181" duration="3301000" />
+      <workItem from="1719248734181" duration="3362000" />
+      <workItem from="1719336444205" duration="13422000" />
     </task>
     <servers />
   </component>

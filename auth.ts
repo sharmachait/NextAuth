@@ -1,11 +1,11 @@
 import NextAuth from 'next-auth';
-import GitHub from 'next-auth/providers/github';
+import { PrismaAdapter } from '@auth/prisma-adapter';
+import _dbContext from '@/lib/dbContext';
+import authConfig from '@/auth.config';
 
 export const {
   handlers: { GET, POST },
   signIn,
   signOut,
   auth,
-} = NextAuth({
-  providers: [GitHub],
-});
+} = NextAuth(authConfig);
