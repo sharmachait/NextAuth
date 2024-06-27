@@ -19,18 +19,15 @@ export default {
         }
         const { email, password } = validatedFields.data;
         const user = await getUserByEmail(email);
-        console.log({ user });
         if (!user || !user.password) {
           return null;
         }
-        const passwordsMatch = await bcrypt.compare(user.password, password);
-        console.log({ passwordsMatch });
+        const passwordsMatch = await bcrypt.compare(password, user.password);
         if (!passwordsMatch) {
-          console.log('passwords dont match');
           return null;
         }
         const { password: _, ...rest } = user;
-        console.log({ rest });
+
         return rest;
       },
     }),
