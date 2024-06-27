@@ -37,8 +37,10 @@ export function LoginForm() {
     setError('');
     setSuccess('');
     startTransition(async () => {
+      console.log('calling');
+      console.log(values);
       let response = await login(values);
-      console.log(response);
+      console.log({ response });
       if (response && response.success) {
         router.replace('/dashboard');
         setSuccess(response.success);

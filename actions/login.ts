@@ -16,6 +16,7 @@ export const login = async (values: z.infer<typeof LoginSchema>) => {
       password,
       redirectTo: REDIRECT_LOGIN,
     });
+    console.log('hi');
     return { success: 'Login successful!' };
   } catch (e) {
     if (e instanceof AuthError) {
@@ -27,7 +28,10 @@ export const login = async (values: z.infer<typeof LoginSchema>) => {
         default:
           return { error: 'Something went wrong.' };
       }
+    } else {
+      console.log({ e });
+      throw e;
+      // return { error: e.message };
     }
-    throw e;
   }
 };

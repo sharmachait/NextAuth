@@ -2,10 +2,10 @@ import authConfig from '@/auth.config';
 import NextAuth from 'next-auth';
 const { auth } = NextAuth(authConfig);
 import {
-  DEFAULT_LOGIN_REDIRECT,
   authApiBaseRoute,
   authRoutes,
   publicRoutes,
+  REDIRECT_LOGIN,
 } from '@/routes';
 import type { NextRequest } from 'next/server';
 import type { Session } from '@auth/core/types';
@@ -27,7 +27,7 @@ export default auth(async function middleware(req: NextAuthRequest) {
   }
   if (isAuthRoute) {
     if (isLoggedIn) {
-      return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
+      return Response.redirect(new URL(REDIRECT_LOGIN, nextUrl));
     }
     return;
   }

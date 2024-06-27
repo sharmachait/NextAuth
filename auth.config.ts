@@ -7,8 +7,6 @@ import { PrismaAdapter } from '@auth/prisma-adapter';
 import _dbContext from '@/lib/dbContext';
 
 export default {
-  adapter: PrismaAdapter(_dbContext),
-  session: { strategy: 'jwt' },
   providers: [
     Credentials({
       authorize: async (credentials) => {
