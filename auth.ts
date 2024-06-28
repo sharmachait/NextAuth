@@ -2,6 +2,8 @@ import NextAuth from 'next-auth';
 import { PrismaAdapter } from '@auth/prisma-adapter';
 import _dbContext from '@/lib/dbContext';
 import authConfig from '@/auth.config';
+import { getUserById } from '@/data/user';
+import { UserRole } from '@prisma/client';
 
 export const {
   handlers: { GET, POST },
@@ -12,6 +14,13 @@ export const {
   adapter: PrismaAdapter(_dbContext),
   session: { strategy: 'jwt' },
   callbacks: {
+    // signIn: async ({ user }) => {
+    //   if (!user.id) return false;
+    //   const existingUser = await getUserById(user.id);
+    //   if (!existingUser) return false;
+    //   if (!existingUser.emailVerified) return false;
+    //   return true;
+    // },
     jwt: async ({ token }) => {
       console.log({ token });
       // token: {
@@ -24,6 +33,11 @@ export const {
       //     jti: '789a34f9-ca2e-4671-a45c-a2f0eba592d4'
       // }
 
+      if (!token.sub) return token;
+
+      const existingUser = await getUserById(token.sub);
+      if (!existingUser) return token;
+      token.role = existingUser.role;
       return token;
     },
     session: async ({ session, token }) => {
@@ -39,6 +53,10 @@ export const {
 
       if (token.sub && session.user) {
         session.user.id = token.sub;
+      }
+
+      if (token.role && session.user) {
+        session.user.role = token.role as UserRole;
       }
 
       return session;
