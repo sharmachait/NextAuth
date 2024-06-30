@@ -13,6 +13,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
+import { useSearchParams } from 'next/navigation';
 import * as z from 'zod';
 import { LoginSchema } from '@/schemas';
 import { Input } from '@/components/ui/input';
@@ -21,6 +22,11 @@ import FormError from '@/components/form-error';
 import FormSuccess from '@/components/form-success';
 import { login } from '@/actions/login';
 export function LoginForm() {
+  const params = useSearchParams();
+  const urLError =
+    params.get('error') === 'OAuthAccountNotLinked'
+      ? 'Email already in use with different account'
+      : '';
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string>();
   const [success, setSuccess] = useState<string>();
@@ -41,12 +47,15 @@ export function LoginForm() {
       console.log(values);
       let response = await login(values);
       console.log({ response });
-      if (response && response.success) {
+      if (response && response.error) {
+        setError(response.error);
+      } else {
         router.replace('/dashboard');
-        setSuccess(response.success);
       }
-      if (response) setError(response.error);
-      setError('Something went wrong');
+
+      // if (response && response.success) {
+      //   setSuccess(response.success);
+      // }
     });
   };
 
@@ -98,7 +107,9 @@ export function LoginForm() {
               )}
             ></FormField>
           </div>
-          {error && <FormError message={error}></FormError>}
+          {(error || urLError) && (
+            <FormError message={error || urLError}></FormError>
+          )}
           {success && <FormSuccess message={success}></FormSuccess>}
           <Button
             disabled={isPending}

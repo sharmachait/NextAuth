@@ -13,14 +13,33 @@ export const {
 } = NextAuth({
   adapter: PrismaAdapter(_dbContext),
   session: { strategy: 'jwt' },
+  events: {
+    linkAccount: async ({ user }) => {
+      let existingUser = await _dbContext.user.findUnique({
+        where: { id: user.id },
+      });
+      if (existingUser && !existingUser.emailVerified) {
+        await _dbContext.user.update({
+          where: { id: user.id },
+          data: { emailVerified: new Date() },
+        });
+      }
+    },
+  },
+  pages: {
+    signIn: '/auth/login',
+    error: '/auth/error',
+  },
   callbacks: {
-    // signIn: async ({ user }) => {
-    //   if (!user.id) return false;
-    //   const existingUser = await getUserById(user.id);
-    //   if (!existingUser) return false;
-    //   if (!existingUser.emailVerified) return false;
-    //   return true;
-    // },
+    signIn: async ({ user, account }) => {
+      console.log({ user, account });
+      if (account?.provider !== 'credentials') return true;
+      if (!user || !user.id) return false;
+      const existingUser = await getUserById(user.id);
+      if (!existingUser?.emailVerified) return false;
+      //add 2fa check
+      return true;
+    },
     jwt: async ({ token }) => {
       console.log({ token });
       // token: {

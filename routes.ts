@@ -1,6 +1,6 @@
-export const publicRoutes = ['/'];
+export const publicRoutes = ['/', '/auth/verify'];
 
-export const authRoutes = ['/auth/login', '/auth/register'];
+export const authRoutes = ['/auth/login', '/auth/register', '/auth/error'];
 
 //should always be allowed never be protected
 export const authApiBaseRoute = '/api/auth';

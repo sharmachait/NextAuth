@@ -11,7 +11,9 @@ export default function BackButton(props: BackButtonProps) {
         variant={'link'}
         asChild
       >
-        <Link href={props.href}>{props.label}</Link>
+        <Link href={props.href}>
+          <div>{props.label}</div>
+        </Link>
       </Button>
     </div>
   );
