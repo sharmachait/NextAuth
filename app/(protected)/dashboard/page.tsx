@@ -1,18 +1,8 @@
-import { auth, signOut } from '@/auth';
+'use client';
+import { signOut } from '@/auth';
+import { useSession } from 'next-auth/react';
 
-export default async function settings() {
-  const session = await auth();
-  return (
-    <div>
-      <form
-        action={async () => {
-          'use server';
-          await signOut({ redirectTo: '/auth/login' });
-        }}
-      >
-        <button type={'submit'}>Sign out</button>
-      </form>
-      {JSON.stringify(session)}
-    </div>
-  );
+export default async function dashboard() {
+  const session = useSession();
+  return <div>{JSON.stringify(session)}</div>;
 }

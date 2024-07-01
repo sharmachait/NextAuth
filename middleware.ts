@@ -17,17 +17,18 @@ interface NextAuthRequest extends NextRequest {
 export default auth(async function middleware(req: NextAuthRequest) {
   const { nextUrl } = req;
   const isLoggedIn = !!req.auth;
-
+  console.log(nextUrl.pathname);
   const isApiAuthRoute = nextUrl.pathname.startsWith(authApiBaseRoute);
   let isPublicRoute = false;
   for (let publicRoute of publicRoutes) {
     if (nextUrl.pathname.startsWith(publicRoute)) isPublicRoute = true;
   }
+  console.log({ isPublicRoute });
   let isAuthRoute = false;
   for (let authRoute of authRoutes) {
     if (nextUrl.pathname.startsWith(authRoute)) isAuthRoute = true;
   }
-
+  console.log({ isAuthRoute });
   if (isApiAuthRoute) {
     return;
   }
